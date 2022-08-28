@@ -16,7 +16,7 @@ const thoughtController = {
       .select("-__v")
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: "No thought with this id" });
+          res.status(404).json({ message: "No thought found with this id" });
           return;
         }
         res.json(dbThoughtData);
@@ -38,7 +38,7 @@ const thoughtController = {
       })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: "No user with this id" });
+          res.status(404).json({ message: "Cannot create thought" });
           return;
         }
         res.json(dbThoughtData);
@@ -57,7 +57,7 @@ const thoughtController = {
     )
       .then((user) =>
         !user
-          ? res.status(404).json({ message: "No thought find with this id" })
+          ? res.status(404).json({ message: "Cannot update thought" })
           : res.json(user)
       )
       .catch((err) => res.status(500).json(err));

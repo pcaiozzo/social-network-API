@@ -10,7 +10,6 @@ const userController = {
       });
   },
 
-
   getUserById({ params }, res) {
     User.findOne({ _id: params.id })
       .select("-__v")
