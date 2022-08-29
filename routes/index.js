@@ -4,11 +4,7 @@ const apiRoutes = require("./api");
 router.use("/api", apiRoutes);
 
 router.use((req, res) => {
-  res
-    .status(400)
-    .send(
-      '<div><h1>OOf</h1><img src="./assets/images/404-error-meme.png"></img></div>'
-    );
+  res.status(404).send("<h1> This is not where you're supposed to be!<h1>");
 });
 
 module.exports = router;
