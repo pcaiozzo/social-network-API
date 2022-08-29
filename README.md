@@ -35,6 +35,10 @@ This application is to provide the back-end functionality for a social network w
 ## Usage
 To get this program to run, use `npm start` in the command line.
 
+## Photos
+  ![Example Image](./images/addfriend.png)
+  ![Example Image](./images/createuser.png)
+
 
 ## GitHub Page Link
 [https://github.com/pcaiozzo/social-network-API](https://github.com/pcaiozzo/social-network-API)
